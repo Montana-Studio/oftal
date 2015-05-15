@@ -1,0 +1,29 @@
+#afiche {
+	.item {
+		&.isotope-item{
+		position: relative !important;
+		margin:0 auto !important;
+		width: 300px;	
+		display: block;
+		}
+	}
+	#portfolio_filter {
+		display: none;
+	}
+	#portfolio_content {
+		.next {
+			display: none;
+		}
+		.prev {
+			@extend .next; 
+		}
+	}
+	.social-share {
+		.get-in-touch {
+			display: none;
+		}
+		.social {
+			float: left;
+		}
+	}
+}

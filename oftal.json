@@ -1,0 +1,26 @@
+{
+  "name": "oftal",
+  "title": "Seminario de Oftalmologia",
+  "description": "Seminario",
+  "version": "0.0.1",
+  "homepage": "http://www.oftal.com/",
+  "author": {
+    "name": "Montana Studio",
+    "email": "mauro@montana-studio.com",
+    "url": "http://www.montana-studio.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mediatrends/oftal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mediatrends/oftal/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.oftal.com//blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": []
+}

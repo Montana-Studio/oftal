@@ -1,0 +1,19 @@
+#invitado {
+	.et-team-post {
+		@extend .center;
+		display: block;
+		width: 42%;
+		.team-info {
+			margin:{top:20px;}
+		}
+
+	}
+	.line-wrapper {
+		display: none;
+	}
+	.timeline-wrapper {
+		.detail {
+			text:{align:left;}
+		}
+	}
+}

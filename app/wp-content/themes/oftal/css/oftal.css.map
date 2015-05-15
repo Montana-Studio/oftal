@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,2BAAe;EACd,UAAU,EAAE,KAAK;EACjB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ",
+"sources": ["../../../../../prod/sass/partial/_slider.scss"],
+"names": [],
+"file": "oftal.css"
+}

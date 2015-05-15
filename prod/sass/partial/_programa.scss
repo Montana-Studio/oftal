@@ -1,0 +1,25 @@
+#programa {
+	.timeline-wrapper {
+		.detail-warpper {
+			.line-wrapper {
+				display: none;
+			}
+			.text-wrapper {
+				.detail {
+					width: 100%;
+					h2 {
+						font:{size: 22px;}
+						margin: 0;
+						width: 120px;
+					}
+					p {
+						font:{size: 16px;}
+						width: 70%;
+						margin: -23px 0 0 120px;
+						text:{align:left;}
+					}
+				}
+			}
+		}
+	}
+}
