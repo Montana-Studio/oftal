@@ -148,7 +148,7 @@ class OE_Service_Block extends AQ_Block {
 		$i = 1;
 		$output = '';
 		$span = '';
-		if($column == 'three') $span = 'col-md-4'; elseif($column == 'four') $span = 'col-md-3'; elseif($column == 'two') $span = 'col-md-6'; else $span= 'span12';
+		if($column == 'three') $span = 'col-md-4'; elseif($column == 'four') $span = 'col-md-3'; elseif($column == 'two') $span = 'col-md-6 italic-font'; else $span= 'span12';
 		foreach( $services as $service ){
 			$animation_effect ='';
 			$duration_effect  ='';

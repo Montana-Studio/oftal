@@ -26,4 +26,15 @@
 			float: left;
 		}
 	}
+	#portafolio_list {
+		.item {
+			a {
+				div {
+					&.hover {
+						background: #fff;
+					}
+				}
+			}
+		}
+	}
 }

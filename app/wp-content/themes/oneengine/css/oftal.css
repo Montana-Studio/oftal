@@ -96,6 +96,49 @@ a {
   padding: 10px 40px;
   margin-top: 25px; }
 
+#aq-template-wrapper-88 .container .heading-title-wrapper .sub-title {
+  font-weight: bold; }
+#aq-template-wrapper-88 .container .list-services-wrapper .service-wrapper p {
+  font-weight: bold;
+  text-align: left; }
+#aq-template-wrapper-88 .container .list-services-wrapper .italic-font:last-child .service-wrapper p {
+  font-style: italic; }
+#aq-template-wrapper-88 .container .service-wrapper .icon {
+  display: none; }
+#aq-template-wrapper-88 form input::-webkit-input-placeholder {
+  color: #fff;
+  font-weight: bold; }
+#aq-template-wrapper-88 form input::-moz-placeholder {
+  color: #fff;
+  font-weight: bold; }
+#aq-template-wrapper-88 form input:-moz-placeholder {
+  color: #fff;
+  font-weight: bold; }
+#aq-template-wrapper-88 form input:-ms-input-placeholder {
+  color: #fff;
+  font-weight: bold; }
+#aq-template-wrapper-88 form textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-weight: bold; }
+#aq-template-wrapper-88 form textarea::-moz-placeholder {
+  color: #fff;
+  font-weight: bold; }
+#aq-template-wrapper-88 form textarea:-moz-placeholder {
+  color: #fff;
+  font-weight: bold; }
+#aq-template-wrapper-88 form textarea:-ms-input-placeholder {
+  color: #fff;
+  font-weight: bold; }
+#aq-template-wrapper-88 form input[type="submit"] {
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 100px;
+  margin-top: 30px; }
+
 #afiche .item.isotope-item {
   position: relative !important;
   margin: 0 auto !important;
@@ -109,6 +152,8 @@ a {
   display: none; }
 #afiche .social-share .social {
   float: left; }
+#afiche #portafolio_list .item a div.hover {
+  background: #fff; }
 
 #programa .timeline-wrapper .detail-warpper .line-wrapper {
   display: none; }

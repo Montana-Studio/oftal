@@ -10,3 +10,59 @@
 		margin:{top:25px;}
 	}
 }
+
+#aq-template-wrapper-88 {
+	.container {
+		.heading-title-wrapper  {
+			.sub-title {
+				font:{weight:bold;}
+			}
+		}
+		.list-services-wrapper {
+			.service-wrapper {
+				p {
+					font:{weight:bold;}
+					text:{align:left;}
+				}
+			}
+			.italic-font{
+				&:last-child{
+					.service-wrapper {
+						p{
+							font:{style:italic;}
+						}
+					}
+				}
+			}
+		}
+		.service-wrapper {
+			.icon {
+				display: none;
+			}
+		}
+	}
+	form {
+		input {
+			@include placeholder {
+			color:#fff;
+			font:{weight:bold;}
+			}
+		}
+		textarea {
+			@include placeholder {
+			color:#fff;
+			font:{weight:bold;}
+			}
+		}
+		input[type="submit"] {
+			background: none;
+			border:2px solid #fff;
+			border-radius: 0;
+			color:#fff;
+			text:{transform:uppercase;}
+			font:{weight:bold} 
+			padding: 5px 100px;
+			margin:{top:30px;}
+		}
+	}
+} 
