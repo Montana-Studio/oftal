@@ -7,8 +7,29 @@
 	.list-contact-wrapper {
 		p {
 			font:{weight:bold;} 
-			input {
-			}
 		}
+	}
+	.contact-form-wrapper {
+		form {
+			input {
+			font:{size:16px;weight:bold;}
+			@include placeholder {
+					color:#fff;
+					font:{size:16px;weight:bold;}
+					font:{weight:bold;}
+				}
+			}
+			textarea {
+			font:{size:16px;weight:bold;}
+			@include placeholder {
+				color:#fff;
+				font:{size:16px;weight:bold;}
+				}
+			}	
+		}
+	}
+	.wpcf7-response-output {
+		color: #fff;
+		font:{weight: bold;}
 	}
 }

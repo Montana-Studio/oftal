@@ -193,7 +193,7 @@ jQuery(document).ready(function($) {
 	}
 	$("#header_slider").owlCarousel({
 		navigation : true, // Show next and prev buttons
-		//autoPlay : 8000 , 
+		autoPlay : 6000 , 
 		navigationText: [
 		  "<span class='arrow-left-slider'></span>",
 		  "<span class='arrow-right-slider'></span>"
