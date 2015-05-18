@@ -5,6 +5,7 @@
 		}
 	}
 	.btn-oe {
+		border-radius: 25px;
 		border:2px solid #fff;
 		padding: 10px 40px;
 		margin:{top:25px;}
@@ -24,12 +25,25 @@
 					font:{weight:bold;}
 					text:{align:left;}
 				}
+				h2 {
+					&.title {
+						text:{align:left;} 
+						font:{size: 16px;weight: bold;}
+					}
+				}
 			}
 			.italic-font{
+				text:{align:left;} 
 				&:last-child{
 					.service-wrapper {
-						p{
+						p {
 							font:{style:italic;}
+						}
+						h2 {
+							&.title {
+								text:{align:left;} 
+								font:{style:italic;}
+							}
 						}
 					}
 				}
@@ -40,29 +54,80 @@
 				display: none;
 			}
 		}
+		.btn-oe {
+			border:2px solid #fff;
+			padding: 10px 40px;
+		}
 	}
 	form {
+		margin:{bottom:50px;}
 		input {
+			font:{size:16px;weight:bold;}
 			@include placeholder {
-			color:#fff;
-			font:{weight:bold;}
+				color:#fff;
+				font:{size:16px;weight:bold;}
+				font:{weight:bold;}
+			}
+			&[type="submit"] {
+				background: none;
+				border:2px solid #fff;
+			  	border-radius: 25px;
+				color:#fff;
+				text:{transform:uppercase;}
+				font:{weight:bold} 
+				padding: 5px 100px;
+				margin:{top:30px;}
+			}
+			&[type=file] {
+			    position: absolute;
+			    filter: alpha(opacity=0);
+			    opacity: 0;
+			    width: 100% !important;
+			    margin: 0;
+				cursor: pointer;
+				height: 40px;
 			}
 		}
 		textarea {
+			font:{size:16px;weight:bold;}
 			@include placeholder {
 			color:#fff;
-			font:{weight:bold;}
+			font:{size:16px;weight:bold;}
 			}
 		}
-		input[type="submit"] {
-			background: none;
+		.contact-file {
+			background:none;
+			width: 100%;
 			border:2px solid #fff;
-			border-radius: 0;
+			height: 40px;
+			border-radius: 25px;
 			color:#fff;
-			text:{transform:uppercase;}
-			font:{weight:bold} 
-			padding: 5px 100px;
+			display: table;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
 			margin:{top:30px;}
+			.wpcf7-form-control-wrap {
+				position: absolute;
+				width: 100%;
+				height: 40px;
+			}
+			&:after{
+				width: 100%;
+				display: table-cell;
+				vertical-align: middle;
+				text:{align:center;}
+				font:{size:16px; weight:bold;}
+				content:'Seleccionar archivo';
+			}
+			&:hover {
+				background: #fff;
+				color:$second_color;
+				&:after {
+					color:$second_color;
+				}
+			}
 		}
+
 	}
 } 

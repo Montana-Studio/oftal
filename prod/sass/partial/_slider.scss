@@ -9,6 +9,9 @@
 		right: 0;
 		margin:10% auto 0 auto;
 		opacity: 0.9;
+		@include queries(notebook){
+			margin:{top:2%;}
+		}
 		.col-logo {
 			@extend .no-paddings;
 			@extend .center;
