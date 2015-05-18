@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /Oftalmologia/htdocs/app/
+RewriteBase /_Montana-Stusio/sitios/_Oftalmologia/htdocs/app/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /Oftalmologia/htdocs/app/index.php [L]
+RewriteRule . /_Montana-Stusio/sitios/_Oftalmologia/htdocs/app/index.php [L]
 </IfModule>
 
 # END WordPress
