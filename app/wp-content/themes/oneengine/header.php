@@ -76,9 +76,31 @@
 
         }
     </style>
+
+
+    <script>
+        jQuery(document).ready(function($){
+            $('.link-style:last-child .service-wrapper .title').append('<a href="http://www.sanpedrodeatacama.cl/cumbres/" target="_blank">Hotel & Spa Cumbres</a>');
+
+            $('#afiche .container .row p.animation-wrapper a').attr({
+                'data-toggle':'modal', 
+                'data-target':'#myModal'});
+        });
+
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div type="button" class="close" data-dismiss="modal" aria-label="Close">x</div>
+        <img src="<?php echo get_template_directory_uri(); ?>img/afiche.jpg" alt="">
+    </div>
+  </div>
+</div>
+
    <?php include (TEMPLATEPATH . '/icon_svg.php'); ?>
 
  	<!-- Preloading

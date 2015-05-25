@@ -1,0 +1,20 @@
+#nuestro-curso {
+	@include queries(phoness-min){
+		padding:{top:30px !important;bottom:30px !important;}
+	}
+	.container {
+		.row{
+			.heading-title-wrapper {
+				@include queries(desktop){
+					padding: 0 10px;
+				}
+				h2 {
+					color:#525962;
+				}
+				.line-title {
+					margin:{bottom:60px;}
+				}
+			}
+		}
+	}
+}

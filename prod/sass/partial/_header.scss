@@ -1,0 +1,39 @@
+#header {
+	background: #fff;
+	position: absolute;
+	top:0;
+	.container {
+		.logo-wrapper {
+			img {
+				@include queries(phoness-min){
+				position: absolute;
+				width: 82px;
+				left: -38px;	
+				}
+			}
+		}
+	}
+	.menu-responsive{
+		.slicknav_menu {
+			.slicknav_btn {
+				background: none;
+				.slicknav_menutxt {
+					display: none;
+				}
+			}
+			.slicknav_icon-bar {
+				background:#000;
+			}
+			.slicknav_nav {
+				background: #fff;
+				color:#000;
+				li {
+					a{
+						color:#525962;
+						text:{align:right;}
+					}
+				}
+			}
+		}	
+	}
+}

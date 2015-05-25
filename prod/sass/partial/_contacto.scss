@@ -1,35 +1,63 @@
 #contact {
-	.heading-title-wrapper {
-		.sub-title {
-			font:{weight:bold;} 
-		}
+	display: none;
+}
+#contacto {
+	@include queries(phoness-min){
+		padding:{top:10px !important;bottom:10px !important;}
 	}
-	.list-contact-wrapper {
-		p {
-			font:{weight:bold;} 
-		}
-	}
-	.contact-form-wrapper {
-		form {
-			input {
-			font:{size:16px;weight:bold;}
-			@include placeholder {
-					color:#fff;
-					font:{size:16px;weight:bold;}
-					font:{weight:bold;}
+	.container {
+		.list-services-wrapper {
+			.col-md-3 {
+				.service-wrapper {
+					.icon {
+						border:2px solid #fff;
+					}
+					h2 {
+						font:{size:17px;weight:bold;}
+					}
+					a {
+						text:{decoration: none;}
+					}
 				}
 			}
-			textarea {
-			font:{size:16px;weight:bold;}
-			@include placeholder {
-				color:#fff;
-				font:{size:16px;weight:bold;}
+		} 
+		.animation-wrapper {
+			.wpcf7 {
+				form {
+					input {
+						@include placeholder {
+							color:#fff;
+							font:{size:16px;weight:bold;}
+							font:{weight:bold;}
+						}
+					}
+					textarea {
+						@include placeholder {
+							color:#fff;
+							font:{size:16px;weight:bold;}
+							font:{weight:bold;}
+						}
+					}
+					input[type="submit"] {
+						color: #fff;
+						background: none;
+						font:{size: 16px;weight:bold;}
+						display:block;
+						border: 2px solid #fff;
+						border-radius: 25px;
+						padding: 5px 40px;
+						margin: 60px auto 0 auto;
+						left:0;
+						right: 0;
+						text:{align:center;}
+						width: 25%;
+						@include queries(phoness-min){
+							width: 90%;
+						}
+					}
 				}
-			}	
+			}
 		}
-	}
-	.wpcf7-response-output {
-		color: #fff;
-		font:{weight: bold;}
+		
 	}
 }

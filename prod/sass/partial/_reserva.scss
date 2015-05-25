@@ -1,4 +1,7 @@
 #reserva {
+	@include queries(phoness-min){
+		padding:{top:30px !important;bottom:30px !important;}
+	}
 	.heading-title-wrapper {
 		.sub-title {
 			font:{weight: bold;size:17px;}

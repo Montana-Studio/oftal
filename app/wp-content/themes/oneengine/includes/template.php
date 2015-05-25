@@ -56,7 +56,7 @@ function oe_main_slider($numbers = -1){
             <div class="text-slider">
                
             </div>
-            <div class="col-xs-11 col-md-7 slider-homeof"> 
+            <div class="col-xs-8 col-md-5 slider-homeof"> 
                 <div class="col-md-4 col-logo">
                     <a class="col-md-12" href="<?php echo home_url(); ?>">
                         <svg class="col-md-12" viewBox="0 0 144 100">
@@ -64,7 +64,7 @@ function oe_main_slider($numbers = -1){
                         </svg>
                     </a>
                 </div>
-                <div class="col-md-10 col-info">
+                <div class="col-md-12 col-info">
                     <h2>XXII Curso Hospital del Salvador</h2>
                     <h3>UNA NUEVA MIRADA</h3>
                     <p class="date">27, 28 y 29 de Agosto del 2015</p>

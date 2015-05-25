@@ -1,4 +1,11 @@
 #programa {
+	z-index: 9;
+	@include queries(phoness-min){
+		padding:{top:30px !important;bottom:30px !important;}
+	}
+	h2 {
+		color:#525962;
+	}
 	.timeline-wrapper {
 		.detail-warpper {
 			.line-wrapper {
@@ -11,12 +18,21 @@
 						font:{size: 22px;}
 						margin: 0;
 						width: 120px;
+						@include queries(phoness-min){
+							font:{size:15px;}
+							margin: 0;
+							width: 70px;
+						}
 					}
 					p {
 						font:{size: 16px;}
 						width: 70%;
-						margin: -23px 0 0 120px;
+						margin:{top:-23px;left:120px;}
 						text:{align:left;}
+						@include queries(phoness-min){
+							font:{size: 14px;}
+							margin:{top: -18px;left:75px;}
+						}
 					}
 				}
 			}
