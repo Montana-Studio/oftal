@@ -96,7 +96,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
         <div type="button" class="close" data-dismiss="modal" aria-label="Close">x</div>
-        <img src="<?php echo get_template_directory_uri(); ?>img/afiche.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/afiche.jpg" alt="">
     </div>
   </div>
 </div>
