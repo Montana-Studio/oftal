@@ -2,6 +2,12 @@
 	@include queries(phoness-min){
 		padding:{top:10px !important;bottom:30px !important;}
 	}
+	@include queries(tabless){
+		padding:{top:100px !important;bottom:100px !important;}
+	}
+	@include queries(notebook-min){
+		padding:{top:100px !important;bottom:150px !important;}
+	}
 	.item {
 		&.isotope-item{
 		position: relative !important;

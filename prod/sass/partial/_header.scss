@@ -6,9 +6,14 @@
 		.logo-wrapper {
 			img {
 				@include queries(phoness-min){
-				position: absolute;
-				width: 82px;
-				left: -38px;	
+					position: absolute;
+					width: 70px;
+					left: -38px;	
+				}
+				@include queries(tabless){
+					position: absolute;
+					width: 73px;
+					left: -38px;
 				}
 			}
 		}

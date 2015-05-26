@@ -5,10 +5,28 @@
 	@include queries(phoness-min){
 		padding:{top:10px !important;bottom:10px !important;}
 	}
+	@include queries(tabless){
+		padding:{bottom:0 !important;}
+	}
+	@include queries(notebook-min){
+		padding:{bottom:0 !important;}
+	}
 	.container {
+		.heading-title-wrapper {
+			@include queries(tabless){
+				padding:{left:0; right:0; bottom:20px;}
+			}
+		}
 		.list-services-wrapper {
-			.col-md-3 {
+			.link-style {
+				@include queries(tabless){
+					width: 24% !important;
+					padding: 0;
+					display: inline-block;
+					word-wrap: break-word;
+				}
 				.service-wrapper {
+
 					.icon {
 						border:2px solid #fff;
 					}
@@ -22,6 +40,9 @@
 			}
 		} 
 		.animation-wrapper {
+			@include queries(tabless){
+				margin:{bottom:40px !important;}
+			}
 			.wpcf7 {
 				form {
 					input {

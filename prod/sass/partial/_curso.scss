@@ -5,6 +5,9 @@
 	.container {
 		.row{
 			.heading-title-wrapper {
+				@include queries(tabless){
+					padding:0;
+				}
 				@include queries(desktop){
 					padding: 0 10px;
 				}

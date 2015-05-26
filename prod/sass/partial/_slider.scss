@@ -13,17 +13,17 @@
 	.slider-homeof {
 		display: table-cell;
 		vertical-align: middle;
-		background: white;
+		background: rgba(255,255,255,.7);
 		height:530px;
 		position: absolute; 
 		left:0;
 		right: 0;
 		margin:10% auto 0 auto;
-		opacity: 0.7;
 		@include queries(phoness-min){
-			height: 250px;
+			height: auto;
 			opacity: 0.8;
-			margin:{top:24%;} 
+			margin:{top: 13%;}
+			padding: 10px !important;
 		}
 		@include queries(tabless-min){
 			height: 370px;
@@ -32,7 +32,7 @@
 		}
 		@include queries(tabless){
 			height: 370px;
-			margin:{top:18%;}
+			margin:{top:10%;}
 			opacity: 0.8;
 		}
 		@include queries(notebook){
@@ -53,16 +53,23 @@
 			height: 230px;
 			z-index: 99;
 			@include queries(phoness-min){
-				height: 110px;
-				top:10px;
+				height: auto;
+				top: 10px;
+				width: 80% !important;
+			}
+			@include queries(phoness){
+				height: 180px;
+			}
+			@include queries(tabless-min){
+				height: 120px;
 			}
 			@include queries(tabless){
-				height: 100px;
+				height: 140px;
 				top: 36px;
-				width: 42% !important;
+				width: 210px !important;
 			}
 			@include queries(notebook-min){
-				height: 100px;
+				height: 180px; 
 				top: 36px;
 			}
 			a {
@@ -80,6 +87,7 @@
 				svg {
 					width: 100%;
 					height: auto;
+					max-height: 180px;
 				}
 			}
 		}
@@ -102,7 +110,7 @@
 				margin:{top:50px;bottom:5px;}
 				@include queries(phoness-min){
 					font:{size: 1.4em;}
-					margin:0 !important;
+					margin:{top: 10px !important;}
 				}
 				@include queries(tabless-min){
 					font:{size: 1.8em;}
