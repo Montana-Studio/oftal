@@ -130,7 +130,7 @@
             	<div class="col-md-3 col-xs-3">
                 	<!-- Logo
                     ======================================================================== -->
-                    <div calss="logo-wrapper">
+                    <div class="logo-wrapper1">
                         <div class="logo">
                              <a href="<?php echo home_url(); ?>">
                                 <?php 
