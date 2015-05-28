@@ -13,6 +13,9 @@
 					position: relative;
 					width:100%;
 				}
+				@include queries(tabless-landscape){
+					max-width: 73pxc; 
+				}
 			}
 			@include queries(phoness-min){
 				top:0 !important;
@@ -24,7 +27,7 @@
 				top:0 !important;
 			}
 		}
-	}
+	} 
 	.menu-responsive{
 		.slicknav_menu {
 			.slicknav_btn {
