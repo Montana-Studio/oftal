@@ -30,6 +30,10 @@ $bp-xxl : 1440px;
 		@media (min-width:$bp-large) and (max-width:$bp-largess) {
 		    @content;
 		}
+	}@else if $min == 'tabless-landscape'{
+		@media (min-width:$bp-large) and (max-width:$bp-largess) and (orientation : landscape) {
+		    @content;
+		}
 	}@else if $min == 'notebook'{
 		@media (min-width:$bp-largess) and (max-width:$bp-xl) {
 		    @content;
