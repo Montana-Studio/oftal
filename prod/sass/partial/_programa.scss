@@ -34,26 +34,38 @@
 						h2 {
 							font:{size: 22px;}
 							margin: 0;
-							width: 120px;
+							width: 140px;
 							@include queries(phoness-min){
 								font:{size:15px;}
 								margin: 0;
-								width: 70px;
+								width: 89px;
+							}
+							@include queries(phoness){
+								font:{size:15px;}
+								margin: 0;
+								width: 89px;
 							}
 						}
 						p {
 							font:{size: 16px;}
 							width: 70%;
-							margin:{top:-23px;left:120px;}
+							margin:{top:-23px;left:152px;}
 							text:{align:left;}
 							@include queries(phoness-min){
 								font:{size: 14px;}
-								margin:{top: -18px;left:75px;}
+								margin:{top: -18px;left:95px;}
+							}
+							@include queries(phoness){
+								font:{size: 14px;}
+								margin:{top: -18px;left:95px;}
 							}
 						}
 					}
 				}
 			}
+		}
+		.line-title {
+			background-color: #DDDDE0 !important;
 		}	
 	}
 } 

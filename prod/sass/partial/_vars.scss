@@ -26,9 +26,21 @@ $bp-xxl : 1440px;
 		@media (min-width:$bp-md ) and (max-width:$bp-large) {
 			@content;
 		}
+	}@else if $min == 'tabless-min-portrait'{
+		@media (min-width:$bp-md ) and (max-width:$bp-large) and (orientation : portrait) {
+			@content;
+		}
+	}@else if $min == 'tabless-min-landscape'{
+		@media (min-width:$bp-md ) and (max-width:$bp-large) and (orientation : landscape) {
+			@content;
+		}	
 	}@else if $min == 'tabless'{
 		@media (min-width:$bp-large) and (max-width:$bp-largess) {
 		    @content;
+		}
+	}@else if $min == 'tabless-portrait'{
+		@media (min-width:$bp-large) and (max-width:$bp-largess) and (orientation : portrait) {
+		    @content; 
 		}
 	}@else if $min == 'tabless-landscape'{
 		@media (min-width:$bp-large) and (max-width:$bp-largess) and (orientation : landscape) {

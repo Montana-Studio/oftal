@@ -3,6 +3,9 @@
 		@include queries(phoness-min){
 			height: 480px !important;
 		}
+		@include queries(tabless-min){
+			height: 760px !important;
+		}
 		@include queries(tabless){
 			height: 760px !important;
 		}
@@ -22,16 +25,16 @@
 		@include queries(phoness-min){
 			height: auto;
 			opacity: 0.8;
-			margin:{top: 13%;}
+			margin:{top:70px;}
 			padding: 10px !important;
 		}
 		@include queries(tabless-min){
-			height: 370px;
+			height: auto;
 			margin:{top:18%;}
 			opacity: 0.8;
 		}
 		@include queries(tabless){
-			height: 370px;
+			height: auto;
 			margin:{top:10%;}
 			opacity: 0.8;
 		}
@@ -61,7 +64,8 @@
 				height: 180px;
 			}
 			@include queries(tabless-min){
-				height: 120px;
+				width: 50%;
+				height: auto;
 			}
 			@include queries(tabless){
 				height: 140px;
@@ -179,7 +183,7 @@
 		bottom:10%;
 		width: 30px;
 		@include queries(phoness-min){
-			bottom: 17%;
+			bottom: 11%;
 		}
 	}	
 }
