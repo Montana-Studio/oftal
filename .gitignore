@@ -1,4 +1,5 @@
 .sass-cache/**/*
+/app/.htaccess
+/app/wp-content/themes/oneengine/css/oftal.css
+/app/wp-content/themes/oneengine/css/oftal.css.map
 app/.htaccess
-app/wp-content/themes/oneengine/css/oftal.css
-app/wp-content/themes/oneengine/css/oftal.css.map
