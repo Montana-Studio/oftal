@@ -18,6 +18,18 @@
 			}
 		}
 		.list-services-wrapper {
+			/*@include queries(phoness-min){
+				display: none;
+			}
+			@include queries(phoness){
+				display: none;
+			}
+			@include queries(tabless){
+				display: none;
+			}
+			@include queries(tabless-min){
+				display: none;
+			} */
 			.link-style {
 				margin:{top:50px;}
 				@include queries(tabless){
