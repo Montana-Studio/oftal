@@ -86,10 +86,20 @@
             $('.link-style:nth-child(2) .service-wrapper .title').attr({
                 'data-toggle':'modal',
                 'data-target':'#ModalActividades'});
+            $('.link-style:nth-child(2)').addClass('hidden-xs');
             $('#afiche .container .row p.animation-wrapper a').attr({
                 'data-toggle':'modal', 
                 'data-target':'#myModal'});
-            });
+
+            var winWidth = $(window).width();
+            if(winWidth < 781){
+                $('#ModalActividades').remove();
+            }else if(winWidth > 782){
+                $('#loadExcur').attr({
+                    'src':'<?php echo get_template_directory_uri(); ?>/excursiones.pdf#zoom=50'
+                })
+            }
+        });
 
     </script>
 </head>
@@ -110,7 +120,7 @@
     <div class="modal-content">
         <div type="button" class="close" data-dismiss="modal" aria-label="Close">x</div>
         <div class="content">
-                <iframe src="<?php echo get_template_directory_uri(); ?>/excursiones.pdf#zoom=50" frameborder="0"></iframe>
+                <iframe id="loadExcur" frameborder="0"></iframe>
         </div>
     </div>
   </div>
