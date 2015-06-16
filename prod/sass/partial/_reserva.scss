@@ -104,6 +104,11 @@
 			font:{size:16px;weight:bold;}
 			}
 		}
+		.contact-name {
+			&.contact-full {
+				width: 100% !important;
+			}
+		}
 		.contact-file {
 			background:none;
 			width: 100%;
@@ -185,4 +190,4 @@
 			}	
 		}
 	}
-} 
+}  
