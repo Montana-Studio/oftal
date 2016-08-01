@@ -7,12 +7,34 @@
 			.logo-wrapper {
 				width:inherit !important;
 				min-width: 69px;
-				max-width: 110px;
 				left:0 !important;
+				top:5px !important;
 				img {
 					position: relative;
 					width:100%;
 				}
+				@include queries(phoness-min){
+					min-width: 130px;
+				}
+				@include queries(phoness){
+					min-width: 130px;
+				}
+				@include queries(tabless-min){
+					top: 17px !important;
+				}
+				@include queries(tabless-min-portrait){
+					top: 5px !important;
+				}
+				@include queries(tabless){
+					top: 17px !important;
+				}
+				@include queries(tabless-portrait){
+					top: 17px !important;
+				}
+				@include queries(tabless-landscape){
+					max-width: 217px;
+					top: 5px !important;
+				} 
 			}
 			@include queries(phoness-min){
 				top:0 !important;
@@ -24,7 +46,7 @@
 				top:0 !important;
 			}
 		}
-	}
+	} 
 	.menu-responsive{
 		.slicknav_menu {
 			.slicknav_btn {

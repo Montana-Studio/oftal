@@ -56,7 +56,7 @@
 						}
 					}
 				}
-			}
+			} 
 		}
 		.service-wrapper {
 			.icon {
@@ -104,6 +104,11 @@
 			font:{size:16px;weight:bold;}
 			}
 		}
+		.contact-name {
+			&.contact-full {
+				width: 100% !important;
+			}
+		}
 		.contact-file {
 			background:none;
 			width: 100%;
@@ -137,6 +142,52 @@
 				}
 			}
 		}
-
+		.option-center {
+			@include queries(phoness){
+				text:{align:center;}
+			}
+			@include queries(phoness-min){
+				text:{align:center;}
+			}
+			.opciones {
+				@include queries(phoness){
+					width: 100%;
+				}
+				label {
+					margin: 0 20px; 
+					text:{align:center;}
+					@include queries(phoness){
+						margin: 5px 20px;
+					}
+					@include queries(phoness-min){
+						margin: 5px 20px;
+					}
+					input {
+						&[type=checkbox] {
+							margin:0 auto;
+							display:block;
+							text:{align:center;}
+							left:0px;
+							right:0;
+							width:14px; 
+						}
+					}
+				}	
+				.wpcf7-list-item {
+					margin:{left:0;}
+					&.first {
+						label {
+							margin:{left:0;}
+							@include queries(phoness){
+								margin:{left:20px;}
+							}
+							@include queries(phoness-min){
+								margin:{left:20px;}
+							}
+						}	
+					}
+				}
+			}	
+		}
 	}
-} 
+}  

@@ -80,11 +80,25 @@
 
     <script>
         jQuery(document).ready(function($){
-            $('.link-style:last-child .service-wrapper .title').append('<a href="http://www.sanpedrodeatacama.cl/cumbres/" target="_blank">Hotel & Spa Cumbres</a>');
 
+            $('.link-style:first-child .service-wrapper .title').append('<a href="http://www.sanpedroatacama.com/" target="_blank">San Pedro de Atacama</a>'); 
+            $('.link-style:last-child .service-wrapper .title').append('<a href="http://www.hotelescumbres.com/" target="_blank">Hotel & Spa Cumbres</a>');
+            $('.link-style:nth-child(2) .service-wrapper .title').attr({
+                'data-toggle':'modal',
+                'data-target':'#ModalActividades'});
+            $('.link-style:nth-child(2)').addClass('hidden-xs');
             $('#afiche .container .row p.animation-wrapper a').attr({
                 'data-toggle':'modal', 
                 'data-target':'#myModal'});
+
+            var winWidth = $(window).width();
+            if(winWidth < 781){
+                $('#ModalActividades').remove();
+            }else if(winWidth > 782){
+                $('#loadExcur').attr({
+                    'src':'<?php echo get_template_directory_uri(); ?>/excursiones.pdf#zoom=50'
+                })
+            }
         });
 
     </script>
@@ -97,6 +111,17 @@
     <div class="modal-content">
         <div type="button" class="close" data-dismiss="modal" aria-label="Close">x</div>
         <img src="<?php echo get_template_directory_uri(); ?>/afiche.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ModalActividades" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div type="button" class="close" data-dismiss="modal" aria-label="Close">x</div>
+        <div class="content">
+                <iframe id="loadExcur" frameborder="0"></iframe>
+        </div>
     </div>
   </div>
 </div>

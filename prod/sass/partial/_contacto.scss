@@ -19,6 +19,7 @@
 		}
 		.list-services-wrapper {
 			.link-style {
+				margin:{top:50px;}
 				@include queries(tabless){
 					width: 24% !important;
 					padding: 0;
@@ -26,7 +27,9 @@
 					word-wrap: break-word;
 				}
 				.service-wrapper {
-
+					.title {
+						cursor: pointer;
+					}
 					.icon {
 						border:2px solid #fff;
 					}
@@ -38,7 +41,7 @@
 					}
 				}
 			}
-		} 
+		}  
 		.animation-wrapper {
 			@include queries(tabless){
 				margin:{bottom:40px !important;}
@@ -73,12 +76,16 @@
 						text:{align:center;}
 						width: 25%;
 						@include queries(phoness-min){
-							width: 90%;
+							width: 100%;
+							font-size: 12px;
+						}
+						@include queries(phoness){
+							width: 100%;
+							font-size: 12px;
 						}
 					}
 				}
 			}
 		}
-		
 	}
 }
