@@ -82,15 +82,15 @@
 			box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 			@include queries(phoness-min){
 				width: 87%;
-				height: 425px;
+				height: auto;
 			}
 			@include queries(tabless){
 				width: 85%;
-				height: 690px;
+				height: auto;
 			}
 			@include queries(notebook-min){
 				width: 85%;
-				height: 700px;
+				height: auto;
 			}
 		}
 	}
